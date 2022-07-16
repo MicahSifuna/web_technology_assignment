@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        /* contact form */
+    form {
+        width: 300px;
+        margin-left: 20px;
+    }
+    form label {
+        display: flex;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    form input {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid gray;
+        border-radius: 6px;
+        margin-top: 10px;
+    }
+
+    .login-box #message {
+        border: 1px solid gray;
+        border-radius: 6px;
+        outline: none;
+    }
+    textarea {
+        resize: none;
+        background-color: white;
+        font-style: italic;
+    }
+    input[type="submit"] {
+        width: 50%;
+        height: 35px;
+        /* margin-top: 20px; */
+        display: flex;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: #49c1a2;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+     input[type="submit"]:hover {
+         background-color: #833ab4;
+     }
+    </style>
+    <body>
+
+        <div class="login-box">
+            <h1>This is a contact form</h1>
+            <form action="" method="post">
+                <label>Email</label>
+                <input type="email" placeholder="enter your email" name="email" required="">
+                <input type="password" placeholder="enter your password" name="password" id="typepass" required="">
+                <label>Message</label>
+                <textarea style="font-size: 20px; color:#000; font-family:'Times New Roman', Times, serif "
+                name="message" id="message" cols="33" rows="4"></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="submit" value="submit">
+            </form>
+
+        <script src="" async defer></script>
+    </body>
+</html>
